@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": "85a5",
+      "title": "gym",
+      "description": "health",
+      "category": "lifestyle",
+      "dueDate": "2025-12-23",
+      "completed": true
+    },
+    {
+      "id": "98e2",
+      "title": "eat ",
+      "description": "food",
+      "category": "life",
+      "dueDate": "",
+      "completed": false
+    },
+    {
+      "id": "07d6",
+      "title": "lllll",
+      "description": "kkk",
+      "category": "",
+      "dueDate": "",
+      "completed": false
+    }
+  ]
+}

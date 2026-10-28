@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #fdf1ff);
+  min-height: 100vh;
+  padding: 30px;
+  color: #4a2c3a;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  color: #b83280;
+  margin-bottom: 25px;
+}
+
+/* Form styling */
+form {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+}
+
+form input {
+  background: #fff0f7;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #ff9acb;
+}
+
+/* Task button */
+form button {
+  background: linear-gradient(135deg, #ff85c0, #ff5fa2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 95, 162, 0.4);
+}
+
+/* Search input */
+#search {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto 25px auto;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #fff0f7;
+  font-size: 14px;
+}
+
+/* Todo list container */
+#todos {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Individual todo card */
+.todo {
+  background: white;
+  border-radius: 18px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.todo:hover {
+  transform: translateY(-3px);
+}
+
+.todo h3 {
+  margin: 0;
+  color: #b83280;
+}
+
+.todo p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #5c3a4a;
+}
+
+.todo small {
+  font-size: 12px;
+  color: #a66;
+}
+
+/* Completed task */
+.todo.completed {
+  background: #fff0f7;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+/* Buttons inside todo */
+.todo button {
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Complete button */
+.todo button:first-of-type {
+  background: #ff85c0;
+  color: white;
+}
+
+.todo button:first-of-type:hover {
+  background: #ff5fa2;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 95, 162, 0.4);
+}
+
+
+/* Delete button */
+.todo button:last-of-type {
+  background: #ffd6e8;
+  color: #b83280;
+} 
+.todo button:last-of-type:hover {
+  background: #ffb3d1;
+}
+/*Edit button */
+.todo button:nth-of-type(2) {
+  background: #ffd1e8;
+  color: #b83280;
+}
+
+.todo button:nth-of-type(2):hover {
+  background: #ffb3d1;
+}
+.todo input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1px solid #ffd1e8;
+  background: transparent;
+  font-family: inherit;
+}
+
+.todo input:disabled {
+  border: none;
+  background: transparent;
+}
+
